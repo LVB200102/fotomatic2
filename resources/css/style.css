@@ -41,6 +41,7 @@ header {
   width: 100%;
   border-bottom: solid 1px #c6c1c1;
   background-color: white;
+  z-index: 10;
 }
 
 header .content {
@@ -118,13 +119,17 @@ header .mobile {
   align-items: flex-start;
   height: 43.5rem;
 }
+#sign-up-section.banner{
+  background-image: url("/Users/larissabentham/Documents/Projects/Fixingcode/resources/images/banner-landingpage.jpg");
+}
 
 #sign-up-cta {
   padding: 0 5rem 2.5rem 5rem;
   border: solid 1px #979797;
   border-radius: 4px;
   background-color: #9dc20b;
-  background-image: url("./resources/images/banner-landingpage.jpg");
+  margin-left: 100px;
+  margin-top: 170px;
 }
 
 #sign-up-cta .content {
@@ -215,7 +220,11 @@ header .mobile {
   justify-content: space-between;
   padding: 4rem 5%;
   background-color: #f3f3f3;
-}
+  }
+  #features-section img{
+    display: flex;
+    width: 80%;
+  }
 
 .feature {
   flex: 1;
@@ -295,8 +304,13 @@ header .mobile {
 }
 
 #filters-section .images-container {
-  max-width: 100%;
+  width: 100%;
   padding: 0 1%;
+  display: inline-flex;
+}
+#filters-section img{
+  width: 100%;
+  justify-content: center;
 }
 
 @media only screen and (max-width: 760px) {
@@ -333,13 +347,15 @@ header .mobile {
 
 #quotes-section {
   background-color: #f3f3f3;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 #quotes-section content {
   padding: 5rem 0;
 }
 
-#quotes-section quote {
+span.quote {
   padding-right: 1.875rem;
   font-family: "Palatino", serif;
   font-size: 1.875rem;
@@ -355,6 +371,8 @@ header .mobile {
 @media only screen and (max-width: 760px) {
   #quotes-section content {
     padding: 1.875rem .625rem;
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
 
   #quotes-section quote {
